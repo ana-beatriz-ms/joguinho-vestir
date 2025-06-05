@@ -1,0 +1,136 @@
+/* # selecionar pelo id.
+    . selecionar pela classe*/ 
+
+#container{
+    position: absolute;
+    margin: auto;
+    width: 755px;
+    height: 987px;
+    background-color: LightYellow;
+}
+
+#background{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+    left: 100px;
+    right: 100px;
+    background-image: url("../Imagens/background.png");
+}
+
+#corpo{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+    background-image: url("../Imagens/corpo.png");
+
+}
+
+#cabelo{
+    position: absolute;
+    width: 555px;
+    height: 987px;    
+}
+
+#blusa{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+}
+
+#shorts{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+}
+
+#sapato{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+}
+
+.cabelo1{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/cabelo cacheado.png");
+}
+
+.cabelo2{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/cabelo loiro.png");
+}
+
+.blusa1{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/buttwiser.png");
+z-index: 2;
+}
+
+.blusa2{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/ferrari.png");
+z-index: 2;
+}
+
+.blusa3{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/vestido branco.png");
+z-index: 2;
+}
+
+.blusa4{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/coachella24.png");
+z-index: 2;
+}
+
+.shorts1{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/short.png");
+z-index: 1; 
+}
+
+.shorts2{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/jeans.png");
+z-index: 1; 
+}
+
+.sapato1{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/bota normal.png");
+z-index: 2;
+}
+
+.sapato2{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/bota24.png");
+z-index: 2;
+}
+
+.sapato3{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/sapatilha.png");
+}
