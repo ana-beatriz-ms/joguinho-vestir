@@ -96,6 +96,14 @@ background-image: url("../Imagens/coachella24.png");
 z-index: 2;
 }
 
+.blusa5{
+position: absolute;
+width: 555px;
+height: 987px;
+background-image: url("../Imagens/blusabranca.png");
+z-index: 2;
+}
+
 .shorts1{
 position: absolute;
 width: 555px;

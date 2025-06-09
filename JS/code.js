@@ -50,6 +50,11 @@ function proximaBlusa() {
     }
     else if(estado.b===3) {
         blusa.setAttribute("class", "blusa4");
+        estado.b++;
+        console.log(estado.b);
+    }
+    else if(estado.b===4) {
+        blusa.setAttribute("class", "blusa5");
         estado.b=0;
         console.log(estado.b);
     }
