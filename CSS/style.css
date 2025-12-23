@@ -1,144 +1,117 @@
-/* # selecionar pelo id.
-    . selecionar pela classe*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-#container{
+body {
+    background-color: #fce4ec; 
+    font-family: 'VT323', monospace; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+#container-principal {
+    width: 800px;
+    height: 600px;
+    background-color: #ffffff;
+    border: 4px solid #f8bbd0; 
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#area-personagem {
+    width: 45%; 
+    height: 100%;
+    position: relative;
+    background-color: #fff9fa;
+    border-right: 4px dashed #f8bbd0;
+}
+
+#fundo-personagem, 
+#corpo, 
+#cabelo, 
+#blusa, 
+#shorts, 
+#sapato,
+[class*="cabelo"], 
+[class*="blusa"], 
+[class*="shorts"], 
+[class*="sapato"] {
     position: absolute;
-    margin: auto;
-    width: 755px;
-    height: 987px;
-    background-color: LightYellow;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: contain;   
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
-#background{
-    position: absolute;
-    width: 555px;
-    height: 987px;
-    left: 100px;
-    right: 100px;
-    background-image: url("../Imagens/background.png");
+#fundo-personagem { z-index: 0; }
+#corpo { background-image: url("../Imagens/corpo.png"); z-index: 10; }
+
+.shorts1 { background-image: url("../Imagens/short.png"); z-index: 20; }
+.shorts2 { background-image: url("../Imagens/jeans.png"); z-index: 20; }
+
+.blusa1 { background-image: url("../Imagens/buttwiser.png"); z-index: 30; }
+.blusa2 { background-image: url("../Imagens/ferrari.png"); z-index: 30; }
+.blusa3 { background-image: url("../Imagens/vestido branco.png"); z-index: 30; }
+.blusa4 { background-image: url("../Imagens/coachella24.png"); z-index: 30; }
+.blusa5 { background-image: url("../Imagens/blusabranca.png"); z-index: 30; }
+
+.sapato1 { background-image: url("../Imagens/bota normal.png"); z-index: 40; }
+.sapato2 { background-image: url("../Imagens/bota24.png"); z-index: 40; }
+.sapato3 { background-image: url("../Imagens/sapatilha.png"); z-index: 40; }
+
+.cabelo1 { background-image: url("../Imagens/cabelo cacheado.png"); z-index: 50; }
+.cabelo2 { background-image: url("../Imagens/cabelo loiro.png"); z-index: 50; }
+
+#controles {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
 }
 
-#corpo{
-    position: absolute;
-    width: 555px;
-    height: 987px;
-    background-image: url("../Imagens/corpo.png");
-
+h1 {
+    color: #ec407a;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #f8bbd0;
+    text-align: center;
 }
 
-#cabelo{
-    position: absolute;
-    width: 555px;
-    height: 987px;    
+.botao-pixel {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    color: white;
+    background-color: #dc7c9c; 
+    border: 4px solid #9d4a4b; 
+    padding: 8px 20px;
+    width: 220px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0px #8e395f;
+    transition: transform 0.1s;
 }
 
-#blusa{
-    position: absolute;
-    width: 555px;
-    height: 987px;
+.botao-pixel:hover {
+    background-color: #f06292;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #ad1457;
 }
 
-#shorts{
-    position: absolute;
-    width: 555px;
-    height: 987px;
-}
-
-#sapato{
-    position: absolute;
-    width: 555px;
-    height: 987px;
-}
-
-.cabelo1{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/cabelo cacheado.png");
-}
-
-.cabelo2{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/cabelo loiro.png");
-}
-
-.blusa1{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/buttwiser.png");
-z-index: 2;
-}
-
-.blusa2{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/ferrari.png");
-z-index: 2;
-}
-
-.blusa3{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/vestido branco.png");
-z-index: 2;
-}
-
-.blusa4{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/coachella24.png");
-z-index: 2;
-}
-
-.blusa5{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/blusabranca.png");
-z-index: 2;
-}
-
-.shorts1{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/short.png");
-z-index: 1; 
-}
-
-.shorts2{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/jeans.png");
-z-index: 1; 
-}
-
-.sapato1{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/bota normal.png");
-z-index: 2;
-}
-
-.sapato2{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/bota24.png");
-z-index: 2;
-}
-
-.sapato3{
-position: absolute;
-width: 555px;
-height: 987px;
-background-image: url("../Imagens/sapatilha.png");
+.botao-pixel:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #ad1457;
 }

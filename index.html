@@ -2,36 +2,42 @@
     <head>
         <link rel="stylesheet" type="text/css" href="CSS/style.css">
     </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Jogo de Vestir</title>
 
 <body>
     
-    <div id="container">
+    <div id="container-principal">
+        <div id="area-personagem">
+            <div id="fundo-personagem">
+                <div id="corpo"></div>
+                <div id="cabelo"></div>
+                <div id="blusa"></div>
+                <div id="shorts"></div>
+                <div id="sapato"></div>
+            </div>
+        </div>
 
-    <div id="background">
-        <div id="corpo"></div>
-        <div id="cabelo"></div>
-        <div id="blusa"></div>
-        <div id="shorts"></div>
-        <div id="sapato"></div>
-    </div>
+        <div id="controles">
+            <h1>Monte seu Look</h1>
+            
+            <input type="button" value="Mudar Cabelo" id="proximoCabelo" class="botao-pixel"
+            onclick="proximoCabelo()">
 
-        <input type="button" value="CABELO" id="proximoCabelo"
-        onclick="proximoCabelo()"> <br><br>
+            <input type="button" value="Mudar Blusa" id="proximaBlusa" class="botao-pixel"
+            onclick="proximaBlusa()">
 
-        <input type="button" value="BLUSA" id="proximaBlusa"
-        onclick="proximaBlusa()"> <br><br>
+            <input type="button" value="Mudar Shorts" id="proximoShort" class="botao-pixel"
+            onclick="proximoShort()">
 
-        <input type="button" value="SHORTS" id="proximoShort"
-        onclick="proximoShort()"> <br><br>
-
-        <input type="button" value="SAPATO" id="proximoSapato"
-        onclick="proximoSapato()"> <br><br>
-
+            <input type="button" value="Mudar Sapato" id="proximoSapato" class="botao-pixel"
+            onclick="proximoSapato()">
+        </div>
     </div>
 
 <script src="JS/code.js"></script>
 
 </body>
-
 </html>
